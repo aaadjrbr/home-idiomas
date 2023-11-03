@@ -1461,16 +1461,30 @@ heading page
 */
 
 section.heading-page {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url(https://lh3.googleusercontent.com/p/AF1QipPmrYjWieIwl0-yLfdd73IU3UD6sYkeObcJGUFa=s680-w680-h510);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 230px;
   padding-bottom: 110px;
   text-align: center;
+  position: relative; /* Add relative positioning to the container */
+}
+
+section.heading-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.719); /* Adjust the opacity (0.5 for 50% opacity) */
+  z-index: 1; /* Set a z-index value to position it behind other elements */
 }
 
 section.heading-page h6 {
+  position: relative;
+  z-index: 2; /* Set a higher z-index to position it on top of the black cover */
   margin-top: 0px;
   font-size: 15px;
   text-transform: uppercase;
@@ -1480,6 +1494,8 @@ section.heading-page h6 {
 }
 
 section.heading-page h2 {
+  position: relative;
+  z-index: 2; /* Set a higher z-index to position it on top of the black cover */
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 36px;
@@ -1834,4 +1850,58 @@ responsive
     color: #1f272b;
   }
 
+}
+
+
+#popup {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffffff3;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 90%; /* Adjust the maximum width as needed */
+}
+
+#closePopup {
+  cursor: pointer;
+  font-size: 1.6em;
+}
+
+#name {
+  width: 80%;
+}
+
+#submit, #showPopup {
+  font-size: 1.4em;
+  color: #fff;
+  background-color: #f5a425;
+  border: #f5a425;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 45px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+#submit:hover, #showPopup:hover {
+  opacity: 0.9;
+}
+
+/* Add media query for screens smaller than a specific width (e.g., 768px) */
+@media screen and (max-width: 768px) {
+  #popup {
+    max-width: 95%; /* Adjust the maximum width for smaller screens */
+  }
+}
+
+.hidden {
+  display: none;
 }

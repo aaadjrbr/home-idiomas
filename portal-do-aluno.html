@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, pt-BR">
 
   <head>
 
@@ -65,59 +65,108 @@ https://templatemo.com/tm-569-edu-meeting
       <div class="row">
         <div class="col-lg-12">
           <h6>ACESSAR</h6>
-          <h2>PORTAL DO ALUNO</h2>
+          <h2>PORTAL DO ALUNO 🎓</h2>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="meetings-page" id="meetings">
+
+  <section class="upcoming-meetings" style="padding-top: 20px;" id="meetings">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Bem-vindo(a) de volta 🤩, clique em "Acessar Materiais"<br/> para começar:</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="categories">
+            <div style="margin-top: 15px;"></div>
+            <button id="showPopup">Acessar Materiais</button>
+            <div id="popup" class="hidden">
+                <span class="close" id="closePopup">&times;</span>
+                <h2 id="popup-header">Digite seu aniverśario, nome e curso:</h2>
+                <br/>
+                <div style="margin-top: 5px;"></div>
+                <input type="date" id="birthday" placeholder="Aniversário" required>
+                <div style="margin-top: 5px;"></div>
+                <input type="text" id="name" placeholder="Nome" required>
+                <div style="margin-top: 5px;"></div>
+                <select id="course" required>
+                    <option value="" disabled selected>Curso</option>
+                </select>
+               <div style="margin-top: 10px;"></div>
+                  <button id="submit">Acessar</button>
+            </div>
+            <div class="main-button-red">
+              <h4>Precisa de ajuda?</h4>
+              <a href="#">Solicitar Ajuda</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
           <div class="row">
-
-            <div class="col-lg-12">
-              <div class="row grid">
-                <div class="col-lg-4 templatemo-item-col all soon">
-                  <div class="meeting-item">
-                    <div class="thumb">
-                      <div class="price">
-                        <span>EXCLUSIVO P/ ALUNOS</span>
-                      </div>
-                      <a href="#"><img src="https://www.theasianschool.net/blog/wp-content/uploads/2023/01/Here-Know-Why-Books-Are-Important-in-Students-Life-1.jpg" alt=""></a>
-                    </div>
-                    <div class="down-content">
-                      <a href="#"><h4>Material Extra</h4></a>
-                      <p>Acesse materiais relacionados a sua aula.</p>
-                    </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>Excluisvo Para Alunos</span>
                   </div>
-                  <div style="margin-bottom: 60px !important;"></div>
+                  <img src="https://cdn.wizard.com.br/wp-content/uploads/2020/06/03192344/palavras-em-ingles-britanico-e-ingles-americano-wizard.jpg" alt="New Lecturer Meeting">
                 </div>
-
-                
-
-                <div class="col-lg-4 templatemo-item-col all soon">
-                  <div class="meeting-item">
-                    <div class="thumb">
-                      <div class="price">
-                        <span>EXCLUSIVO P/ ALUNOS</span>
-                      </div>
-                      <a href="#"><img src="https://lh3.googleusercontent.com/jkZCBRJyma75COTFV7asRSPncxtpmNqtxwM7jYOVYIKF_lYfI_jVlJWTlrdwNd0xEU3G_FppX_g1h29DfIijxTuJTQK14K_yp8k" alt=""></a>
-                    </div>
-                    <div class="down-content">
-                      <a href="#"><h4>Aulas Extras</h4></a>
-                      <p>Acesse aulas exclusivas, para um melhor entendimento.</p>
-                    </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Níveis:<span>A1, A2, B1,<br/> B2, C1, C2</span></h6>
                   </div>
-                  <div style="margin-bottom: 60px !important;"></div>
-                </div>
-
-
-                  </div>
+                  <br/>
+                  <h4 style="font-size: 2.2em;">Inglês</h4>
+                  <p>Acessar Materiais De Estudar Em Inglês
+                  </p>
                 </div>
               </div>
             </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>Excluisvo Para Alunos</span>
+                  </div>
+                  <img src="https://m7g2b8q3.stackpathcdn.com/wp-content/uploads/2019/09/Espanhol.jpg" alt="Online Teaching">
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Níveis:<span>A1, A2, B1,<br/> B2, C1, C2</span></h6>
+                  </div>
+                  <br/>
+                  <h4 style="font-size: 2.2em;">Espanhol</h4>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>Excluisvo Para Alunos</span>
+                  </div>
+                  <img src="https://saopaulo.consulfrance.org/IMG/arton1793.jpg?1472228075" alt="Student Training">
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Níveis:<span>A1, A2, B1,<br/> B2, C1, C2</span></h6>
+                  </div>
+                  <br/>
+                  <h4 style="font-size: 2.2em;">Francês</h4>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="footer">
       <p style="color: white !important;">Copyright © 2023 Home Idiomas, Todos os Direitos Reservados.
@@ -185,6 +234,7 @@ https://templatemo.com/tm-569-edu-meeting
           checkSection();
         });
     </script>
+    <script src="assets/js/students.js"></script>
 </body>
 
 
