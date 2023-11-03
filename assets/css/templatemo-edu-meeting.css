@@ -438,7 +438,6 @@ header
 }
 
 .header-area .main-nav .menu-trigger {
-  background-color: rgba(255, 255, 255, 0.753);
   border-radius: 5px;
   cursor: pointer;
   display: block;
@@ -463,7 +462,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   width: 30px;
@@ -474,7 +473,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -483,7 +482,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   width: 30px;
@@ -494,7 +493,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -535,11 +534,11 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #1e1e1e;
+  background-color: #ffffff;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -547,11 +546,11 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #1e1e1e;
+  background-color: #ffffff;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
 }
 
 .header-area.header-sticky {
@@ -578,7 +577,7 @@ header
 
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
-    color: #1e1e1e;
+    color: #ffffff;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -589,7 +588,7 @@ header
     width: 100%;
   }
   .header-area {
-    background-color: #000000;
+    background-color: #00000060;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
