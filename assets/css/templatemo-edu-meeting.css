@@ -1899,6 +1899,7 @@ responsive
 @media screen and (max-width: 768px) {
   #popup {
     max-width: 95%; /* Adjust the maximum width for smaller screens */
+    width: 100%;
   }
 }
 
