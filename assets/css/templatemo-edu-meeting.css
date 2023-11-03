@@ -130,6 +130,7 @@ global styles
 html,
 body {
   background: #a12c2f;
+  margin: 20px;
   font-family: 'Poppins', sans-serif;
 }
 
