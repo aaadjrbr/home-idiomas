@@ -1,12 +1,11 @@
-
+<!DOCTYPE html>
 <html lang="en, pt-BR">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://homeidiomascatalao.com.br/wp-content/uploads/2020/05/cropped-ICON-HOME-IDIOMAS-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://homeidiomascatalao.com.br/wp-content/uploads/2020/05/cropped-ICON-HOME-IDIOMAS-32x32.png">
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <meta name="description" content="Home Idiomas, Catalão, Uberlândia Inglês, Espanhol, Francês, Aprenda Inglês, Curso de Inglês, Fácil, Método VIP, Home Catalão, Home Uberlândia, Minas Gerais, Goiás, Home Inglês.">
@@ -78,6 +77,57 @@
 .content {
     display: none; /* Hide the content initially */
 }
+
+/* pop-up container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 1111; /* Keep the z-index for the container */
+}
+
+.popup-image {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 10%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1111; /* Increase the z-index for the image to make it appear in front */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #141414;
+    color: #fff;
+}
 </style>
 
 </head>
@@ -95,6 +145,9 @@
       </div>
 
 
+
+<button id="scrollToTopBtn" title="Go to top">&#128316;</button>
+<div class="content">
   <!-- Sub Header -->
   <div class="sub-header">
     <div class="container">
@@ -119,7 +172,12 @@
   </div>
 
 
-<div class="content">
+      <!-- Pop up -->
+      <div id="popupContainer" class="popup-container">
+        <span id="closeButton" class="close-button">&times;</span>
+        <img src="./assets/images/pop-up-img.heic" alt="Pop-up Image" class="popup-image">
+    </div>
+
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
       <div class="container">
@@ -318,7 +376,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="item">
-                <h3>FICOU COM ALGUMA DÚVIDA?</h3>
+                <h3>FICOU COM ALGUMA DÚVIDA? 🤔</h3>
                 <p>Nós sabemos daquela insegurança na hora de começar um idioma, mas não se preocupe estamos aqui para te ajudar. Leia abaixou as "dúvidas frequêntes" ou se preferir, entre em contato.</p>
                 <div class="main-button-red">
                   <div class="scroll-to-section"><a href="#">Falar Via WhatsApp</a></div>
@@ -328,7 +386,7 @@
             <div class="col-lg-12">
               <div class="item">
                 <h3>
-                  Abaixo estão "feedbacks" de nossos alunos</h3>
+                  Abaixo estão "feedbacks" de nossos alunos 💬📣</h3>
                 <p>Fazemos o possível para você, aluno(a), se sentir em casa. Confiamos no nosso bom serviço prestado.</p>
                 <div class="main-button-yellow">
                   <div class="scroll-to-section"><a href="#contact">Agendar Aula Experimental Gratuita</a></div>
@@ -397,7 +455,8 @@
     </div>
   </section>
 
-  <section class="apply-now" style="padding-top: 45px; padding-bottom: 20px;">
+  <section class="services">
+  <section class="services2" style="padding-top: 45px; padding-bottom: 20px;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -407,7 +466,8 @@
                 <img style="height: 70px; width: 70px;" src="https://homeidiomascatalao.com.br/wp-content/uploads/2020/08/Luana-Teixeira-23-Anos-INGL%C3%8AS.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Inglês</div></h4>
+                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Inglês 🇺🇸</div></h4>
+                <p>⭐⭐⭐⭐⭐</p><br/>
                 <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
               </div>
             </div>
@@ -417,7 +477,8 @@
                 <img style="height: 70px; width: 70px;" src="https://homeidiomascatalao.com.br/wp-content/uploads/2020/08/Luana-Teixeira-23-Anos-INGL%C3%8AS.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Inglês</div></h4>
+                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Francês 🇫🇷</div></h4>
+                <p>⭐⭐⭐⭐⭐</p><br/>
                 <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
               </div>
             </div>
@@ -427,7 +488,8 @@
                 <img style="height: 70px; width: 70px;" src="https://homeidiomascatalao.com.br/wp-content/uploads/2020/08/Luana-Teixeira-23-Anos-INGL%C3%8AS.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Inglês</div></h4>
+                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Espanhol 🇪🇸</div></h4>
+                <p>⭐⭐⭐⭐⭐</p><br/>
                 <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
               </div>
             </div>
@@ -437,7 +499,8 @@
                 <img style="height: 70px; width: 70px;" src="https://homeidiomascatalao.com.br/wp-content/uploads/2020/08/Luana-Teixeira-23-Anos-INGL%C3%8AS.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Inglês</div></h4>
+                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Inglês 🇺🇸</div></h4>
+                <p>⭐⭐⭐⭐⭐</p><br/>
                 <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
               </div>
             </div>
@@ -447,7 +510,8 @@
                 <img style="height: 70px; width: 70px;" src="https://homeidiomascatalao.com.br/wp-content/uploads/2020/08/Luana-Teixeira-23-Anos-INGL%C3%8AS.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Inglês</div></h4>
+                <h4>Natália <br/><div style="font-size: 0.7em">Aluna de Inglês 🇺🇸</div></h4>
+                <p>⭐⭐⭐⭐⭐</p><br/>
                 <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
               </div>
             </div>
@@ -516,7 +580,7 @@
 
   </div> <!-- div for the loader -->
   <script src="./assets/js/loader.js"></script>
-
+  <script src="./link-tree/links.js"></script>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
@@ -576,9 +640,5 @@
           checkSection();
         });
     </script>
-
-
-
-
 </body>
 </html>
