@@ -703,6 +703,17 @@ banner
     z-index: -1;
 }
 
+/* Hide the play button in modern browsers */
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+/* Hide the play button in Safari */
+video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+
+
 #bg-video::-webkit-media-controls {
     display: none !important;
 }
