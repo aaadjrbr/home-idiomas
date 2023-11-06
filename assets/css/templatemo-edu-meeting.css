@@ -793,6 +793,36 @@ services
   padding: 40px;
 }
 
+.item2 {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #ffffffe3 !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  text-align: center;
+  color: #000000;
+  padding: 30px;
+}
+
+.services .item2 .icon {
+  max-width: 60px;
+  margin: 0 auto;
+}
+
+.services .item2 h4 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.services .item2 p {
+  color: #ffffff;
+  font-size: 1em;
+}
+
+
 .services .item .icon {
   max-width: 60px;
   margin: 0 auto;
@@ -1099,7 +1129,7 @@ section.apply-now .item p {
   transition: height 300ms ease-in-out;
   border-bottom: 1px solid #fff;
 }
-.accordion-body > .content {
+.accordion-body > .content2 {
   padding: 20px;
   padding-top: 0;
 }
