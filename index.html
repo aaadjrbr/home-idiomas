@@ -210,9 +210,10 @@
 
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
-    <video autoplay muted loop id="bg-video" playsinline poster="./assets/images/video-item-bg.jpg" controls>
+    <video autoplay muted loop id="bg-video" playsinline poster="./assets/images/video-item-bg.jpg">
       <source src="assets/images/course-video.mp4" type="video/mp4" />
     </video>
+    
        
 
     
@@ -641,6 +642,19 @@
         $(window).scroll(function () {
           checkSection();
         });
+    </script>
+
+    <script>
+      var video = document.getElementById('bg-video');
+
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+  // If it's Safari, add the 'controls' attribute
+  video.setAttribute('controls', true);
+} else {
+  // For other browsers, remove the 'controls' attribute
+  video.removeAttribute('controls');
+}
+
     </script>
 </body>
 </html>
